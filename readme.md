@@ -1,3 +1,5 @@
+# Django challenge by Eduardo Avila 🎊
+
 # Register user:
 `curl --location --request POST 'https://djangotestinterview.herokuapp.com/auth/' \
 --form 'username=test2' \
