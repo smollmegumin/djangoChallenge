@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mu2x5(u%@$!dn%o2wks3^rjp8yq=)kpx2dp)-=-%kog!b717w@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "cars.apps.CarsConfig",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "rest_framework.authtoken",
-    "corsheaders"
+    "corsheaders",
+    "cars",
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = False
