@@ -1,6 +1,7 @@
 import os
 import sys
 from distutils.sysconfig import get_python_lib
+import django_heroku
 
 from setuptools import setup
 
@@ -64,3 +65,5 @@ should manually remove the
 %(existing_path)s
 directory and re-install Django.
 """ % {"existing_path": existing_path})
+
+django_heroku.settings(locals())
